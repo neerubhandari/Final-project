@@ -1,0 +1,347 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  margin: 4% 4% 8% 4%;
+}
+.fa {
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+/*##############HEADER###############*/
+
+.header-container {
+  margin-top: 3%;
+}
+
+.nav {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header a:not(.highlight) {
+  color: #000000;
+}
+
+.highlight {
+  color: #99ca3a;
+}
+
+.header li {
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+.nav {
+  float: right;
+  margin-right: 10%;
+}
+
+.branding {
+  float: left;
+  margin-left: 10%;
+}
+
+.line {
+  height: 2px;
+  color: #99ca3a;
+}
+
+/*##############Showcase###############*/
+
+.top-showcase h1 {
+  font-size: 35px;
+}
+
+.showcase li {
+  display: inline;
+}
+
+.showcase .right {
+  margin-left: 45%;
+}
+
+.showcase .row {
+  width: 50%;
+  float: left;
+}
+
+.showcase hr {
+  opacity: 0.3;
+}
+
+.buttom-showcase {
+  margin-top: 10%;
+}
+
+.top-showcase {
+  margin-right: 40%;
+}
+
+.showcase img {
+  margin-top: 15%;
+}
+
+/*##############Detail###############*/
+
+.detail {
+  display: inline-block;
+  width: 100%;
+}
+
+.detail-top p {
+  font-size: 110%;
+  line-height: 31px;
+  padding: 4.5%;
+}
+
+.detail-top {
+  background-color: #eeffcc;
+  height: 123px;
+  border-radius: 10px;
+  padding-bottom: 2.5%;
+}
+
+.detail-buttom {
+  float: right;
+  margin-right: 8%;
+  margin-top: 2%;
+}
+
+.detail .column {
+  width: 30%;
+  float: left;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.detail-buttom button {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #99ca3a;
+  height: 54px;
+  width: 323px;
+  weight: 600;
+  style: normal;
+  size: 22px;
+  color: white;
+}
+
+/*##############Contact###############*/
+
+.contact .row {
+  width: 45%;
+  float: left;
+  margin-left: 5%;
+}
+
+.contact-bottom .fa {
+  color: #99ca3a;
+}
+
+.contact-top {
+  text-align: center;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.contact .blue {
+  color: #1ba8e6;
+}
+
+.contact-bottom {
+  margin-top: 3%;
+}
+
+.contact-bottom h4 {
+  font-size: 24px;
+  margin-left: 12%;
+}
+
+.contact ul li {
+  font-size: 17px;
+  line-height: 10px;
+  font-weight: normal;
+  padding: 9px;
+}
+
+/*##############Footer###############*/
+
+.footer {
+  display: inline-block;
+  margin-top: 0%;
+  width: 100%;
+}
+
+.footer li {
+  text-decoration: none;
+}
+
+.footer-buttom {
+  height: 5%;
+  width: 100%;
+  background-color: #1ba8e6;
+  color: white;
+  display: inline-block;
+}
+
+.footer-top {
+  color: #1ba8e6;
+  background-color: #ebf5ff;
+  height: 30%;
+  width: 100%;
+  font-size: 18px;
+  line-height: 22.63px;
+}
+
+.footer .row {
+  float: left;
+  width: 20%;
+  padding: 33px;
+  padding-bottom: 20px;
+}
+
+.social-icon {
+  display: flex;
+}
+
+.footer .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+
+.footer-top {
+  background-color: #ebf5ff;
+  height: 241px;
+  margin-bottom: 0%;
+}
+
+.footer-buttom {
+  height: 38px;
+  text-align: center;
+  margin-top: 0%;
+}
+
+.footer a {
+  color: #1ba8e6;
+}
+
+.footer li {
+  padding: 10px;
+}
+
+.footer img {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+/*##############Responsive###############*/
+
+@media screen and (max-width: 860px) {
+  /*##############Header Responsive###############*/
+
+  .nav {
+    height: auto;
+    width: 70px;
+    margin-right: 53%;
+    text-align: center;
+  }
+
+  .branding {
+    margin-left: 26%;
+  }
+
+  /*##############Showcase Responsive###############*/
+
+  .showcase img {
+    margin-left: 24%;
+    text-align: center;
+  }
+
+  .top-showcase h1 {
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .showcase li {
+    display: inline;
+  }
+
+  .showcase #row1 {
+    margin-top: 8%;
+    margin-left: 5%;
+    width: 100%;
+  }
+
+  .showcase-row {
+    width: 50%;
+    float: left;
+  }
+
+  .buttom-showcase {
+    margin-right: 36%;
+    width: 100%;
+  }
+
+  /*##############Detail Responsive###############*/
+
+  .detail-top .column {
+    padding-top: 2%;
+  }
+
+  .detail-buttom {
+    margin-right: 17%;
+    margin-top: 0%;
+  }
+
+  /*##############contact Responsive###############*/
+
+  .contact .row {
+    width: 45%;
+    margin-left: 19%;
+  }
+
+  .contact ul i {
+    display: inline-block;
+  }
+
+  /*##############Footer Responsive###############*/
+
+  .footer img {
+    margin-left: 20%;
+    margin-top: 35%;
+  }
+
+  .footer-top {
+    height: 80%;
+    display: inline-block;
+  }
+
+  .footer .row {
+    width: 17%;
+    margin-left: 10%;
+    margin-top: 0%;
+  }
+
+  .footer .social-item {
+    width: 100%;
+  }
+
+  .footer-buttom {
+    float: left;
+    margin-top: 0%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer .row {
+    width: 17%;
+  }
+}

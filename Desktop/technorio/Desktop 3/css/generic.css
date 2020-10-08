@@ -1,0 +1,19 @@
+.display-inlineblock {
+  display: inline-block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-align {
+  text-align: center;
+}
