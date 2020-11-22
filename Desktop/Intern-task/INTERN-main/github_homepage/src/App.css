@@ -1,0 +1,146 @@
+li {
+  list-style: none;
+}
+/*****************Navbar Start************************/
+input[type="text"] {
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px;
+  width: 45vh;
+  border: 1px solid #fff;
+  margin-top: 14px;
+}
+ul.dropdown {
+  display: none;
+  margin-top: 14px;
+}
+.App-logo {
+  height: 4vmin;
+}
+.left-header {
+  margin-left: 5vh;
+}
+.icon ul li {
+  display: inline;
+  padding: 5px;
+  cursor: pointer;
+}
+.icon ul li:hover {
+  color: #959da5;
+}
+.navigation {
+  justify-content: center;
+  height: 10vh;
+  display: inline;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #000;
+  color: #fff;
+}
+ul.feature li {
+  display: inline;
+  padding: 20px;
+}
+ul.feature li:hover {
+  color: #959da5;
+}
+.icon {
+  margin-left: 27vh;
+  margin-top: 3vh;
+}
+.feature {
+  margin-top: 16px;
+  cursor: pointer;
+}
+.plus {
+  height: 20px;
+  width: 40px;
+}
+/*****************Navbar End************************/
+
+/*******Showcase Start********/
+input[type="text1"] {
+  width: 90%;
+  margin-bottom: 2vh;
+  background-color: rgba(224, 211, 211, 0.733);
+  border: none;
+  border-radius: 5px;
+  padding: 1vh;
+}
+.new {
+  width: 13vh;
+  height: 5vh;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+}
+.new:hover {
+  background-color: #176f2c;
+}
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.showrepo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2vh;
+}
+p.left {
+  margin-top: 5vh;
+  margin-left: 8vh;
+}
+.showrepo {
+  margin-top: 10vh;
+}
+.showcase-content-left {
+  margin-left: 4vh;
+}
+.showcase-content-right {
+  background-color: #e1e4e8;
+}
+button.organization {
+  color: #0366d6;
+  border: solid 1px lightgrey;
+  border-radius: 5px;
+  background-color: #fff;
+}
+button.organization:hover {
+  background-color: #0366d6;
+  color: #fff;
+}
+.footer-right ul {
+  display: inline-block;
+  float: left;
+}
+.footer {
+  display: grid;
+  margin-top: 0%;
+  grid-template-columns: 1fr 3fr;
+}
+/*******Showcase End********/
+
+/*******Card Start**************/
+.card {
+  margin-left: 10px;
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+}
+/*******Card End********/
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
