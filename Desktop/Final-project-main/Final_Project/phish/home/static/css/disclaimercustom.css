@@ -1,0 +1,64 @@
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #c30e2d;
+}
+
+a:hover, a:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid black;
+    color:black;
+}
+
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: black;
+    border-color: none;
+    background color:#c30e2d;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: white;
+    background-color: #c30e2d;
+    border-color: black;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+p{
+    color:black;
+}
+a.list-group-item, button.list-group-item {
+    color: black;
+}
+
+.panel-danger>.panel-heading {
+    color: white;
+    background-color: #c30e2d;
+    border-color: black;
+}
+.panel-body {
+    padding: 15px;
+    border:1px solid black;
+}
+
+element.style {
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    line-height: 1.42857143;
+    color: black;
+}

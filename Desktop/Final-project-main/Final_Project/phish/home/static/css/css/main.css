@@ -1,0 +1,238 @@
+/* Custom Styles */
+
+body {
+	/*padding-top: 60px;*/
+/* 	padding-bottom: 40px; */
+	background:url('../images/main_bg.png');
+}
+
+#banner {
+	background: url('../images/bg.png') top left;
+	display: block;
+	width: 100%;
+	height: 250px;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.35);
+	color: #FFF;
+	box-shadow: 0 4px 27px -8px black;
+}
+
+#banner h1{
+	font-weight: normal;
+	letter-spacing: -5px;
+/* 	font-size: 134px; */
+	font-size: 8.8em;
+	text-shadow: 0 4px 0 rgba(0,0,0,0.15);
+	text-align:center;
+}
+
+#banner blockquote {
+	padding: 6px 7px;
+	margin-left: 52px;
+	margin-top: -12px;
+	border-left: 5px solid #CFCFCF;
+}
+
+.user-info-wrap{
+	border-bottom: 1px solid #CFCFCF;
+	padding: 6px;
+}
+
+.user-image{
+	float:left;
+}
+
+.user-image img {
+	box-shadow: 0 0 14px -2px;
+	-moz-box-shadow: 0 0 14px -2px;
+	-webkit-box-shadow: 0 0 14px -2px;
+}
+
+.user-details {
+	float:left;
+	margin-left: 10px;
+}
+
+.user-details li{
+	list-style-type:none;
+}
+
+/* carousel plugin css */
+
+.list_carousel {
+	background-color: white;
+	margin: 0 0 30px 60px;
+}
+.list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	font-size: 40px;
+	color: #999;
+	text-align: center;
+ 	width: 50px;
+	height: 100px; 
+	padding: 0;
+ 	margin: 6px; 
+	margin: 2px; 
+	display: block;
+	float: left;
+}
+
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+}
+
+.prev, .next{
+	color:black;
+	text-decoration: none;
+	position: absolute;
+	bottom: 74px;
+}
+
+.prev:hover, .next:hover {
+	text-decoration: none;
+
+}
+.prev {
+	float: left;
+	margin-left: 10px;
+	left: 0;
+}
+.next {
+	float: right;
+	margin-right: 10px;
+	right: 0;
+}
+.pager {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.pager a {
+	margin: 0 5px;
+	text-decoration: none;
+}
+.pager a:hover {
+	text-decoration: none;
+}
+.pager a.selected {
+	text-decoration: underline;
+}
+.timer {
+	background-color: #999;
+	height: 6px;
+	width: 0px;
+}
+
+
+#footer{
+	padding-top:12px;
+	background:#A12527;
+	color:#fff;
+	font-weight:bold;
+	text-shadow:0 -1px 1px #000;
+}
+
+#footer a {
+	color:#CFCFCF;
+}
+
+#footer a:hover, #footer a:focus {
+	color:white;
+}
+
+#yfb_twt {
+	margin-top:11px!important;
+}
+
+.feedback a{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+/* News coverage area  */
+
+.news-coverage{
+	list-style: none;
+	margin: 0;
+	text-align:center;
+}
+
+.news-coverage li {
+	display:inline-block;
+}
+
+.news-coverage li a {
+	background: url('../images/news-coverage.jpg') no-repeat;
+	height: 53px;
+	display: block;
+}
+
+.news-coverage .annapurna {
+	background-position: 0 -54px;
+	width: 137px;
+}
+
+.news-coverage .annapurna:hover {
+	background-position: 0 0;
+}
+
+.news-coverage .nepal-tv {
+	background-position: -146px -65px;
+	width: 112px;
+	height:60px;
+}
+
+.news-coverage .nepal-tv:hover {
+	background-position: -144px -3px;
+}
+
+.news-coverage .kantipur {
+	background-position: -281px -66px;
+	width: 106px;
+}
+
+.news-coverage .kantipur:hover {
+	background-position:-280px -7px;
+}
+
+.news-coverage .republica {
+	background-position: -389px -55px;
+	width: 131px;
+}
+
+.news-coverage .republica:hover {
+	background-position:-389px -1px;
+}
+
+.news-coverage .setopati {
+	background-position: -522px -50px;
+	width: 102px;
+}
+
+.news-coverage .setopati:hover {
+	background-position:-522px 3px;
+}
+
+.news-coverage .nagarik {
+	background-position: -631px -56px;
+	width: 115px;
+}
+
+.news-coverage .nagarik:hover {
+	background-position:-626px 0;
+}
+
+.news-coverage .hindustan-times {
+	background-position: -758px -54px;
+	width: 172px;
+}
+
+.news-coverage .hindustan-times:hover {
+	background-position:-757px 0;
+}
