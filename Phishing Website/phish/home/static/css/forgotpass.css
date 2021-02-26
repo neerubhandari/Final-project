@@ -1,0 +1,82 @@
+
+
+.row2 {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+.red {
+  color: red;
+}
+
+.menuzord-menu> li> a {
+  padding: 8px 16px;
+}
+
+body {
+  background-image: url(images/banner-sign-up.jpg);
+}
+
+
+/*.container1{
+					padding-bottom:150px;
+				}*/
+
+#container {
+  padding-top: 123px;
+  padding-bottom: 123px;
+}
+
+.btn-primary {
+  width: 100%;
+  font-size: 15px;
+  border: 0 #d10303;
+  text-align: left;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #EE163B;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.btn-primary:hover {
+  color: white;
+  border-color: #d10303;
+  background-color:#d10303;
+  
+}
+
+.head {
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading {
+  color: #fff;
+  display: block;
+  position: relative;
+  background: #EE163B;
+  padding: 10px 20px;
+  font: 'Open Sans', Arial, sans-serif;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small.alternative-action.text-muted{
+  padding-left: 42%;
+  color:red;
+
+}
+.small.alternative-action.text-muted:hover{
+ color: red;
+}

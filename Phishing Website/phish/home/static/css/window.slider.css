@@ -1,0 +1,63 @@
+#window-slider{
+    width: 300px;
+    height: 305px;
+    margin-left:65px;
+    /*width: 815px;
+    height: 515px;*/
+    
+  
+    background-color: #111111;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#tl-slider{
+
+    border: solid 5px #111111;
+    border-right: solid 2.5px #111111;
+    border-bottom: solid 2.5px #111111;
+    border-top-left-radius: 0;
+}
+#tr-slider{
+    border: solid 5px #111111;
+    border-left: solid 2.5px #111111;
+    border-bottom: solid 2.5px #111111;
+    border-top-right-radius: 0;
+}
+#bl-slider{
+    border: solid 5px #111111;
+    border-right: solid 2.5px #111111;
+    border-top: solid 2.5px #111111;
+    border-bottom-left-radius: 0;
+}
+#br-slider{
+    border: solid 5px #111111;
+    border-left: solid 2.5px #111111;
+    border-top: solid 2.5px #111111;
+    border-bottom-right-radius: 0;
+}
+#window-slider > div:nth-child(odd){
+    float: left;
+}
+#window-slider > div:nth-child(even){
+    float: right;
+}
+#window-slider > div{
+    position:relative;
+   /* width: 209.5px;
+    height: 167px;*/
+    width: 150px;
+    height: 130px;*
+    
+
+    overflow: hidden;
+}
+#window-slider > div > img{
+    position: relative;
+    /*width: 209.5px;
+    height: 167px;*/
+}
+#window-slider > div > img:nth-child(n+2){
+    display: none;
+}

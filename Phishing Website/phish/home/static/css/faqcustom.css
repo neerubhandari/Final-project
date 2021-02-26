@@ -1,0 +1,53 @@
+a.list-group-item, button.list-group-item {
+    color: black;
+    font-style: bold;
+}
+
+section > .container, section > .container-fluid {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #c30e2d;
+    font-style: bold;
+}
+
+
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color:white;
+}
+
+.panel-danger>.panel-heading {
+    color: black;
+    background-color: #c30e2d;
+    border-color:#c30e2d ;
+}
+
+.panel-body{
+	color:black;
+	border:1px solid black; ;
+    
+}
+
+.font-28 {
+    font-size: 28px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+}
+
+.menuzord .showhide em {
+    width: 20px;
+    height: 3px;
+    margin: 3.5px 20px 0;
+    float: right;
+    }
