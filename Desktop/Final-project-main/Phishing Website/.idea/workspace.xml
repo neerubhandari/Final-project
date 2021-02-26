@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a58390e8-c834-418f-b5ac-6e9745d0ef70" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1giLp7ayvFFQsz3Q7LZqPMCJXPc" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="RF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Phishing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/phish/home" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/phish/home/RF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.RF" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a58390e8-c834-418f-b5ac-6e9745d0ef70" name="Default Changelist" comment="" />
+      <created>1598592646134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598592646134</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="460" y="98" key="FileChooserDialogImpl" timestamp="1614307907697">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state x="460" y="98" key="FileChooserDialogImpl/0.0.1360.687@0.0.1360.687" timestamp="1614307907697" />
+    <state width="1339" height="158" key="GridCell.Tab.0.bottom" timestamp="1613973110827">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state width="1339" height="158" key="GridCell.Tab.0.bottom/0.0.1360.687@0.0.1360.687" timestamp="1613973110827" />
+    <state width="1339" height="158" key="GridCell.Tab.0.center" timestamp="1613973110827">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state width="1339" height="158" key="GridCell.Tab.0.center/0.0.1360.687@0.0.1360.687" timestamp="1613973110827" />
+    <state width="1339" height="158" key="GridCell.Tab.0.left" timestamp="1613973110827">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state width="1339" height="158" key="GridCell.Tab.0.left/0.0.1360.687@0.0.1360.687" timestamp="1613973110827" />
+    <state width="1339" height="158" key="GridCell.Tab.0.right" timestamp="1613973110827">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state width="1339" height="158" key="GridCell.Tab.0.right/0.0.1360.687@0.0.1360.687" timestamp="1613973110827" />
+    <state x="181" y="0" key="SettingsEditor" timestamp="1613973890163">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state x="181" y="0" key="SettingsEditor/0.0.1360.687@0.0.1360.687" timestamp="1613973890163" />
+    <state x="376" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1614307849802">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state x="376" y="167" key="com.intellij.ide.util.TipDialog/0.0.1360.687@0.0.1360.687" timestamp="1614307849802" />
+  </component>
+</project>

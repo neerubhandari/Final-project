@@ -1,0 +1,565 @@
+{% load static %}
+{% block content %}
+   <head>
+      <title>
+         Phishing Website
+      </title>
+      <!-- Stylesheet -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ <link href="{% static 'slider_image.css' %}" rel="stylesheet" type="text/css">
+       <script src="{% static 'main.js' %}"></script>
+      <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+      <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+      <link href="css/animate.css" rel="stylesheet" type="text/css">
+      <link href="{% static 'css/css-plugin-collections.css' %}" rel="stylesheet"/>
+      <!-- CSS | menuzord megamenu skins -->
+      <link id="menuzord-menu-skins" href="{% static 'css/menuzord-skins/menuzord-boxed.css' %}" rel="stylesheet"/>
+      <!-- CSS | Main style file -->
+      <link href="{% static 'css/style-main.css' %}" rel="stylesheet" type="text/css">
+      <!-- CSS | Preloader Styles -->
+      <link href="css/preloader.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Custom Margin Padding Collection -->
+      <link href="{% static 'css/custom-bootstrap-margin-padding.css' %}" rel="stylesheet" type="text/css">
+      <!-- CSS | Responsive media queries -->
+      <link href="{% static 'css/responsive.css' %}" rel="stylesheet" type="text/css">
+      <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+      <!-- This style css use slider logo-->
+      <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+      <!-- Revolution Slider 5.x CSS settings -->
+      <link href="{% static 'js/revolution-slider/css/settings.css' %}" rel="stylesheet" type="text/css"/>
+      <link href="{% static 'js/revolution-slider/css/layers.css' %}" rel="stylesheet" type="text/css"/>
+      <link href="{% static 'js/revolution-slider/css/navigation.css' %}" rel="stylesheet" type="text/css"/>
+      <!-- CSS | Theme Color -->
+      <link href="{% static 'theme-skin-blue.css' %}" rel="stylesheet" type="text/css">
+      <!-- external javascripts -->
+      <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
+      <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <!-- This script help to footer slider-->
+      <!-- JS | jquery plugin collection for this theme -->
+      <script src="{% static 'js/jquery-plugin-collection.js' %}"></script>
+      <!-- Revolution Slider 5.x SCRIPTS -->
+      <script src="{% static 'js/revolution-slider/js/jquery.themepunch.tools.min.js' %}"></script>
+      <script src="{% static 'js/revolution-slider/js/jquery.themepunch.revolution.min.js' %}"></script>
+   </head>
+   <body class="has-side-panel side-panel-right fullwidth-page side-push-panel">
+      <div class="body-overlay">
+      </div>
+      <div id="wrapper" class="clearfix">
+         <!-- Header -->
+         <header id="header" class="header">
+            <div class="header-top bg-theme-colored sm-text-center">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-5">
+                        <div class="widget no-border m-0">
+                                  <h4>Phishing Website Detection</h4>
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="widget no-border m-0">
+                           <ul class="list-inline pull-right flip sm-pull-none sm-text-center mt-5">
+                              <li class="sm-display-block mt-sm-10 mb-sm-10">
+                                 <form id="form1" method="post">
+						<div class="col-md-8">
+								{% csrf_token %}
+								{{ form.post }}
+								<!--<input type="text" name="web_url" size="110">-->
+						</div>
+						<div class="col-md-3">
+							<button id="checker">Check URL</button>
+						</div>
+					</form>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header-nav">
+               <div class="header-nav-wrapper navbar-scrolltofixed bg-lightest" style="z-index: auto; position: static; top: auto;">
+                  <div class="container">
+                     <nav id="menuzord-right" class="menuzord blue bg-lightest menuzord-responsive">
+                         <div class="main_body">
+		<h4 id="result">{{ msg }}</h4>
+	</div>
+                        <ul class="menuzord-menu pull-right menuzord-right menuzord-indented scrollable" style="max-height: 400px;">
+                           <li class="active">
+                              <a href="index.html"><i class="fa fa-home fa-2x"></i>HOME</a>
+                           </li>
+                           <li>
+                              <a href="index.html#about">ABOUT</a>
+                           </li>
+                           <li>
+                              <a href="index.html#how">HOW WE WORK</a>
+                           </li>
+                           <li>
+                              <a href="index.html#partners">PARTNERS</a>
+                           </li>
+                           <li>
+                              <a href="faq.html">FAQ</a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div style="display: none; width: 1349px; height: 70px; float: none;">
+               </div>
+            </div>
+         </header>
+         <!-- Start main-content -->
+         <div class="main-content">
+            <!-- Section: home -->
+             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'img/b.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item active">
+      <img src="{% static 'img/b.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'img/a.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            </section>
+            <!-- Section: Welcome -->
+            <section>
+               <div class="container pb-0">
+                  <div class="row" style="padding-bottom: 25px;">
+                     <div class="col-md-4 wow fadeInLeft animation-delay4">
+                         <div class="about">
+                             <img src="{% static 'img/a.jpg' %}" style="height:600px">
+                         </div>
+                        <!-- Modal - Appontment Form Ends -->
+                        <!--  </div> -->
+                     </div>
+                     <div class="col-md-4 wow fadeInUp animation-delay4" id="about">
+                        <h3 class="font-playfair mt-10 mt-sm-30 mb-0" style="color: #7fdbff;">
+                           About
+                        </h3>
+                        <h1 class="font-playfair mt-0" style="color:#7fdbff;">
+                           Phishing
+                        </h1>
+                        <p>
+                        </p>
+                        <p class="mt-20">
+                          Phishing is a crime in which a perpetrator sends the fake e-mail,
+                            which appears to come from popular and trusted brand or organization, asking
+                            to input personal credential like bank password, username, phone number, address,
+                            credit card details, and so forth . The fake e-mails often look amazingly legitimate,
+                            and even the website where the Internet user is asked to input personal information
+                            also looks similar to legitimate one. Phishing messages propagate over e-mail, SMS,
+                            instant messengers, social networking sites, VoIP, and so forth, but e-mail is
+                            the popular way to perform this attack and 65% of the total phishing attack is
+                            achieved by visiting the hyperlink attached to the e-mail . Moreover, spear
+                            phishing attack is becoming popular nowadays. Business e-mail compromise (BEC)
+                            is observed as a major Internet threat in 2015 . In BEC, the intruder uses
+                            spear phishing methods to fool organizations and Internet persons. More sophisticated
+                            spear phishing attacks  targeted particular individual or groups within the organization.
+                            Phishing is metaphorically similar to fishing in the water, but instead of trying to catch a fish,
+                            attackers try to steal consumer’s personal information .
+
+                           <br>
+
+                        </p>
+                     </div>
+                     <div class="col-md-4 wow fadeInRight animation-delay4">
+                        <p class="mt-20">
+  Similarly, we present various types of phishing detection techniques, their advantages, and drawbacks.
+	Also, we provide a comprehensive literature review of visual similarity based phishing detection approaches, which incorporates document object model (DOM), Cascading Style Sheet (CSS), HTML tag, image processing, and hybrid techniques. Moreover, we present a comparison between various visual similarity based antiphishing techniques. It provides a better understanding of the problem, current solution space, <br>and future research scope to efficiently deal with phishing attacks using visual similarity based approach.
+	In addition, we provide several issues and challenges in detection of phishing attacks.
+The rest of the paper is structured as follows. Section 2 contains the background, history, and statistics of phishing attack. Section 3 describes the overview of phishing detection using visual similarity based approaches. Section 4 presents the taxonomy of various types of phishing detection and filtering techniques; especially this section focuses on visual similarity approaches in detail. Section 5 presents the performance and evaluation matrices to judge the antiphishing system. Section 6 presents the open issues and challenges in phishing detection and protection. Finally, Section 7 concludes the paper.
+
+                        </p>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+            </section>
+
+            <section data-bg-img="images/pattern/p4.png" style="background-image: url(&quot;images/pattern/p4.png&quot;);">
+               <div class="container pb-80">
+                  <div class="section-title text-center">
+                     <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                           <h2 class="text-uppercase mt-0" id="how" style="color: #c30e2d;">How We Work?</h2>
+                        </div>
+                        <img src="images/steps1234.png">
+                     </div>
+                  </div>
+                   <div class="section-centent">
+                     <div class="row">
+                       <div class="col-md-12">
+                         <div class="services-tab border-10px bg-white-light">
+                           <ul class="nav nav-tabs">
+                             <li class="active"><a href="#tab11" data-toggle="tab"><i class="icon-xray2"></i>Step 1</a></li>
+                             <li><a href="#tab12" data-toggle="tab"><i class="icon-heart36"></i>Step 2</a></li>
+                             <li><a href="#tab13" data-toggle="tab"><i class="icon-brain9"></i>Step 3</a></li>
+                             <li><a href="#tab14" data-toggle="tab"><i class="icon-teeth1"></i>Step 4</a></li>
+                             <li><a href="#tab15" data-toggle="tab"><i class="icon-hospital35"></i>Step 5</a></li>
+                           </ul>
+                           <div class="tab-content">
+                             <div class="tab-pane fade in active" id="tab11">
+                                <div class="row">
+                                 <div class="col-md-5">
+                                   <div class="thumb">
+                                     <img class="img-fullwidth" src="images/services/1.jpg" alt="">
+                                   </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                   <div class="service-content">
+                                     <h3 class="sub-title mb-0 mt-30">Step 1</h3>
+                                     <h2 class="title mt-0">Dataset Selection</h2>
+                                      <h1 class="title mt-0"></h1> -->
+                   <p>Dataset selection from UCL Repository</p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i></li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+
+                     </div>
+                     <div class="tab-pane fade" id="tab12">
+                     <div class="row">
+                     <div class="col-md-5">
+                     <div class="thumb">
+                     <img class="img-fullwidth" src="images/services/2.jpg" alt="">
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <div class="service-content">
+                     <h3 class="sub-title mb-0 mt-30">Step 2</h3>
+                     <h2 class="title mt-0">Filtering the dataset</h2>
+                     <p>Dataset filtering is most important in classification</p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i></li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i></li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="tab-pane fade" id="tab13">
+                     <div class="row">
+                     <div class="col-md-5">
+                     <div class="thumb">
+                     <img class="img-fullwidth" src="images/services/3.jpg" alt="">
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <div class="service-content">
+                     <h3 class="sub-title mb-0 mt-30">Step 3</h3>
+                     <h1 class="title mt-0">Training and Testing the Dataset</h1>
+                     <p>Splitting the Training data and Testing data into 8:2 ratio</p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i></li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i></li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i></li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="tab-pane fade" id="tab14">
+                     <div class="row">
+                     <div class="col-md-5">
+                     <div class="thumb">
+                     <img class="img-fullwidth" src="images/services/4.jpg" alt="">
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <div class="service-content">
+                     <h3 class="sub-title mb-0 mt-30">Step 4</h3>
+                     <h1 class="title mt-0">Features Selection</h1>
+                     <p>Selecting features based on importance</p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> Feel like Home Services</li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> Outdoor Checkup</li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> Easy and Affordable Billing</li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="tab-pane fade" id="tab15">
+                     <div class="row">
+                     <div class="col-md-5">
+                     <div class="thumb">
+                     <img class="img-fullwidth" src="images/services/5.jpg" alt="">
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <div class="service-content">
+                     <h3 class="sub-title mb-0 mt-30">Step 5</h3>
+                     <h1 class="title mt-0">Implementing the model</h1>
+                     <p> </p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i></li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div> -->
+               </div>
+             </div>
+            </section>
+      </div>
+      <!-- end main-content -->
+      <!-- Footer -->
+      <footer class="footer p-0 bg-solid-color bg-black-111">
+         <div class="container">
+            <div class="row">
+               <div class="footer-box-wrapper equal-height">
+                  <div class="col-sm-4 footer-box-one pr-0 pl-sm-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"><i class=" icon-ambulance14 text-white"></i></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+
+                           </h4>
+                           <p>
+
+                              <a href="#"><i class="fa fa-arrow-circle-right font-14"></i></a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 footer-box-two pl-0 pr-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"><i class="fa fa-android text-white" aria-hidden="true"></i></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                              Phishing Website App Coming Soon
+                           </h4>
+                           <p>
+                              We also launching our android app through play store.
+                              <a href="#"><i class="fa fa-arrow-circle-right font-14"></i></a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 footer-box-three pl-0 pr-sm-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"><i class=" fa fa-credit-card text-white"></i></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                              Request blood through SMS.
+                           </h4>
+                           <p>
+                              You can also use SMS service for register or request for blood.
+                              <a href="#"><i class="fa fa-comment-o font-14" aria-hidden="true"></i></a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row equal-height">
+               <div class="col-sm-4 col-md-3 border-right-black sm-height-auto">
+                  <div class="widget dark pt-120 pb-30 maxwidth400 sm-text-center">
+                     <h5 class="widget-title">
+                        Quick Links
+                     </h5>
+                     <ul>
+                        <li><i class="fa fa-home text-white" aria-hidden="true"></i><a href="index.html" style="color:white; font-size:"> Home</a></li>
+                        <li><i class="fa fa-info-circle text-white" aria-hidden="true"></i><a href="index.html#about" style="color:white; font-size:"> About</a></li>
+                        <li><i class="fa fa-briefcase text-white" aria-hidden="true"></i><a href="index.html#how" style="color:white; font-size:"> How we work</a></li>
+                        <li><i class="fa fa-question-circle text-white" aria-hidden="true"></i><a style="color:white; font-size:" href="faq.html"> FAQ</a></li>
+                        <li><i class="fa fa-lock text-white" aria-hidden="true"></i><a href="privacy_policy.html" style="color:white; font-size:"> Privacy Policy</a></li>
+                        <li><i class="fa fa-file text-white" aria-hidden="true"></i><a href="termsofuse.html" style="color:white; font-size:"> Terms of Use</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4 col-md-6 text-center border-right-black sm-height-auto">
+                  <div class="footer-widget pt-70 pl-60 pr-60 pt-sm-10 pl-sm-10 pr-sm-10 maxwidth400 sm-text-center">
+                     <h5 class="widget-title" id="partners" style="color:white"; > OUR PARTNERS </h5>
+                     <div id="window-slider">
+                        <!-- TOP LEFT SLIDER -->
+                        <div id="tl-slider">
+                           <img src="images/footerslider/ME.png" alt="Mevents">
+                           <img src="images/footerslider/osn.png" alt="OpenspaceNepal">
+                        </div>
+                        <!-- TOP RIGHT SLIDER -->
+                        <div id="tr-slider">
+                           <img src="images/footerslider/leadership_corner.png" alt="">
+                           <img src="images/footerslider/technorio.png" alt="technorio">
+                        </div>
+                        <!-- BOTTOM LEFT SLIDER -->
+                        <div id="bl-slider">
+                           <img src="images/footerslider/sparrowsms.png" alt="sparrowsms">
+                           <img src="images/footerslider/ME.png" alt="Mevents">
+                        </div>
+                        <!-- BOTTOM RIGHT SLIDER -->
+                        <div id="br-slider">
+                           <img src="images/footerslider/osn.png" alt="OpenspaceNepal">
+                           <img src="images/footerslider/sparrowsms.png" alt="sparrowsms">
+                        </div>
+                     </div>
+                     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+                  </div>
+               </div>
+               <div class="col-sm-4 col-md-3 sm-height-auto">
+                  <div class="widget dark text-right sm-text-center pt-120 pb-140 pt-xs-40 pb-xs-0 maxwidth400">
+                     <h5 class="widget-title">Quick Contact</h5>
+                     </h5>
+                     <ul>
+                        <li>
+                           <i class="fa fa-phone-square text-white" aria-hidden="true"></i>
+                           <a href="tel: +97714888888" style="color:white; font-size:">  +97714888888</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-phone text-white" aria-hidden="true"></i>
+                           <a href="tel:+977980000000" style="color:white; font-size:"> +977980000000</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-envelope text-white" aria-hidden="true"></i>
+                           <a href="mailto:help@phishing.org" style="color:white; font-size:"> help@phishing.org</a>
+                        </li>
+                     </ul>
+                     <ul class="social-icons icon-gray icon-circled icon-sm pull-right sm-pull-none sm-text-center mt-sm-15">
+                        <li class="wow fadeInRight" data-wow-delay=".1s">
+                           <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-delay=".2s">
+                           <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-nav bg-black-222 p-20">
+            <div class="container pt-20 pb-0">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p class="font-11 pull-left mb-sm-15 sm-text-center sm-pull-none">
+                        Copyright &copy;2020 Phishing Detection Website. All Rights Reserved
+                     </p>
+                     <div class="widget m-0">
+                        <ul class="font-11 pull-right text-right list-inline sm-text-center sm-pull-none">
+                           <li>
+                              <a href="index.html">Home</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#about">About</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#how">How we work?</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#partners">Partners</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#">FAQ</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      </div>
+      <a class="scrollToTop" href="#" style="display: block;"><i class="fa fa-angle-up"></i></a>
+   </body>
+{% endblock %}

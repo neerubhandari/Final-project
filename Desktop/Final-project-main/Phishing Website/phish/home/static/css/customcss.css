@@ -1,0 +1,24 @@
+.small.alternative-action {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.small, small {
+    font-size: 120%;
+}
+
+ body {
+    font-family: "Open Sans",Arial,sans-serif;
+}
+
+a {
+    color: #d10303;
+  }
+
+  a:focus, a:hover {
+    color: #860202;
+}
