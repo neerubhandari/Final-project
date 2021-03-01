@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 import whois
 import datetime
 import urllib.request
-
+from django.contrib import messages
 df = pd.read_csv('C:\phishcoop.csv')
 
 df = df.head(2000)
@@ -300,24 +300,8 @@ def index(request):
                     testing_inputs = arr1
                     return training_inputs, training_outputs, testing_inputs
 
-                if 1:
-                    training_inputs, training_outputs, testing_inputs = load_data(arr)
-                    print("Tutorial: Training a decision tree to detect phishing websites")
-                    print("Training data loaded.")
-                    classifier = tree.DecisionTreeClassifier()
-                    print("Decision tree classifier created.")
-                    print(classifier)
-                    print("Beginning model training.")
-                    classifier.fit(training_inputs, training_outputs)
-                    print("Model training completed.")
-                    predictions = classifier.predict(testing_inputs)
-                    print("Predictions on testing data computed.")
-                    if predictions == 1:
-                        print("Phishing")
-                        print(predictions)
-                    else:
-                        print("Safe")
-                        print(predictions)
+
+
 
                     from sklearn.model_selection import train_test_split
                     x_train, x_test, y_train, y_test = train_test_split(training_inputs, training_outputs,
@@ -339,17 +323,11 @@ def index(request):
                     y_pred1 = classifier.predict(testing_inputs)
                     print(y_pred1)
 
-
-
-                if (y_pred1 == -1 ):
-                    msg = 'This site is  safe'
+                if (y_pred1 == -1):
+                    msg =  'This site is  safe'
                 else:
                     msg = 'This site is not  safe'
-
-
-
-                return render(request, 'index.html',
-                              {'form': form, 'text': url, 'score': url_score, 'msg': msg})
+                return render(request, 'index.html',{'form': form, 'text': url, 'score': url_score, 'msg': msg})
 
 
 

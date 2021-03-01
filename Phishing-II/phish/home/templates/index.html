@@ -1,0 +1,272 @@
+
+{% load static %}
+
+   <head>
+      <title>
+         Phishing Website
+      </title>
+      <!-- Stylesheet -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ <link href="/static/slider_image.css" rel="stylesheet" type="text/css">
+       <script src="/static/main.js"></script>
+      <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+      <link href="css/animate.css" rel="stylesheet" type="text/css">
+      <link href="/static/css/css-plugin-collections.css" rel="stylesheet"/>
+      <!-- CSS | menuzord megamenu skins -->
+      <link id="menuzord-menu-skins" href="/static/css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
+      <!-- CSS | Main style file -->
+      <link href="/static/css/style-main.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Preloader Styles -->
+      <link href="css/preloader.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Custom Margin Padding Collection -->
+      <link href="/static/css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Responsive media queries -->
+      <link href="/static/css/responsive.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+      <!-- This style css use slider logo-->
+      <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+      <!-- Revolution Slider 5.x CSS settings -->
+      <link href="/static/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/>
+      <link href="/static/js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css"/>
+      <link href="/static/js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css"/>
+      <!-- CSS | Theme Color -->
+      <link href="/static/theme-skin-blue.css" rel="stylesheet" type="text/css">
+      <!-- external javascripts -->
+      <script src="/static/js/jquery-2.2.0.min.js"></script>
+      <script src="/static/js/jquery-ui.min.js"></script>
+      <script src="/static/js/bootstrap.min.js"></script>
+      <!-- This script help to footer slider-->
+      <!-- JS | jquery plugin collection for this theme -->
+      <script src="/static/js/jquery-plugin-collection.js"></script>
+      <!-- Revolution Slider 5.x SCRIPTS -->
+      <script src="/static/js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+      <script src="/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+   </head>
+   <body class="has-side-panel side-panel-right fullwidth-page side-push-panel">
+      <div class="body-overlay">
+      </div>
+      <div id="wrapper" class="clearfix">
+         <!-- Header -->
+         <header id="header" class="header">
+             <nav class="navbar navbar-expand-lg row" style="background-color: #7FDBFF;">
+  <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="menuzord-menu pull-right menuzord-right menuzord-indented scrollable  col" >
+                           <li class="active">
+                              <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+                           </li>
+                           <li>
+                              <a href="index.html#about">ABOUT</a>
+                           </li>
+                           <li>
+                              <a href="{% url 'home:how_work' %}">HOW WE WORK</a>
+                           </li>
+      </ul>
+      </ul>
+    </div>
+       <div class=" no-border m-0 col-6">
+           <h4>Phishing Website Detection</h4>
+       </div>
+
+
+      <ul class="menuzord-menu pull-right menuzord-right menuzord-indented scrollable " >
+
+                          <li class="col" >
+                           <a href="{% url 'home:detect' %}"><button class="btn btn-dark" type="button">Detect URl</button></a>
+                          </li>
+                        </ul>
+  </div>
+</nav>
+
+         </header>
+         <!-- Start main-content -->
+         <div class="main-content">
+            <!-- Section: home -->
+            <section>
+               <div class="container pb-0">
+                  <div class="row" style="padding-bottom: 25px;">
+                     <div class="col-md-4 wow fadeInLeft animation-delay4">
+                         <div class="about">
+                             <img src="/static/img/a.jpg" style="height:600px">
+                         </div>
+                        <!-- Modal - Appontment Form Ends -->
+                        <!--  </div> -->
+                     </div>
+                     <div class="col-md-4 wow fadeInUp animation-delay4" id="about">
+                        <h3 class="font-playfair mt-10 mt-sm-30 mb-0" style="color: #7fdbff;">
+                           About
+                        </h3>
+                        <h1 class="font-playfair mt-0" style="color:#7fdbff;">
+                           Phishing
+                        </h1>
+                        <p>
+                        </p>
+                        <p class="mt-20">
+                          Phishing is a crime in which a perpetrator sends the fake e-mail,
+                            which appears to come from popular and trusted brand or organization, asking
+                            to input personal credential like bank password, username, phone number, address,
+                            credit card details, and so forth . The fake e-mails often look amazingly legitimate,
+                            and even the website where the Internet user is asked to input personal information
+                            also looks similar to legitimate one. Phishing messages propagate over e-mail, SMS,
+                            instant messengers, social networking sites, VoIP, and so forth, but e-mail is
+                            the popular way to perform this attack and 65% of the total phishing attack is
+                            achieved by visiting the hyperlink attached to the e-mail . Moreover, spear
+                            phishing attack is becoming popular nowadays. Business e-mail compromise (BEC)
+                            is observed as a major Internet threat in 2015 . In BEC, the intruder uses
+                            spear phishing methods to fool organizations and Internet persons. More sophisticated
+                            spear phishing attacks  targeted particular individual or groups within the organization.
+                            Phishing is metaphorically similar to fishing in the water, but instead of trying to catch a fish,
+                            attackers try to steal consumer’s personal information .
+
+                           <br>
+
+                        </p>
+                     </div>
+                     <div class="col-md-4 wow fadeInRight animation-delay4">
+                        <p class="mt-20">
+  Similarly, we present various types of phishing detection techniques, their advantages, and drawbacks.
+	Also, we provide a comprehensive literature review of visual similarity based phishing detection approaches, which incorporates document object model (DOM), Cascading Style Sheet (CSS), HTML tag, image processing, and hybrid techniques. Moreover, we present a comparison between various visual similarity based antiphishing techniques. It provides a better understanding of the problem, current solution space, <br>and future research scope to efficiently deal with phishing attacks using visual similarity based approach.
+	In addition, we provide several issues and challenges in detection of phishing attacks.
+The rest of the paper is structured as follows. Section 2 contains the background, history, and statistics of phishing attack. Section 3 describes the overview of phishing detection using visual similarity based approaches. Section 4 presents the taxonomy of various types of phishing detection and filtering techniques; especially this section focuses on visual similarity approaches in detail. Section 5 presents the performance and evaluation matrices to judge the antiphishing system. Section 6 presents the open issues and challenges in phishing detection and protection. Finally, Section 7 concludes the paper.
+
+                        </p>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+            </section>
+
+
+      <!-- Footer -->
+      <footer class="footer p-0 bg-solid-color bg-black-111">
+         <div class="container">
+            <div class="row">
+               <div class="footer-box-wrapper equal-height">
+                  <div class="col-sm-4 footer-box-one pr-0 pl-sm-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"><i class=" icon-ambulance14 text-white"></i></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                                Extension Available
+                           </h4>
+                           <p>
+                                 If you want to detect phishing URL then you can use the extesnion of this web-app
+                              <a href="#"><i class="fa fa-arrow-circle-right font-14"></i></a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 footer-box-two pl-0 pr-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"><i class="fa fa-android text-white" aria-hidden="true"></i></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                              Secure Search
+                           </h4>
+                           <p>
+                              If your visiting any suspicious site ,please do check if the site is safe oe not with this website
+                              <a href="#"><i class="fa fa-arrow-circle-right font-14"></i></a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 footer-box-three pl-0 pr-sm-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"><i class=" fa fa-credit-card text-white"></i></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                              View Information
+                           </h4>
+                           <p>
+                              You can also get some important information about phishing with the help of our website
+                              <a href="#"><i class="fa fa-comment-o font-14" aria-hidden="true"></i></a>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row equal-height">
+               <div class="col-sm-4 col-md-6 border-right-black sm-height-auto">
+                  <div class="widget dark pt-120 pb-30 maxwidth400 sm-text-center">
+                     <h5 class="widget-title">
+                        Quick Links
+                     </h5>
+                     <ul>
+                        <li><i class="fa fa-home text-white" aria-hidden="true"></i><a href="index.html" style="color:white; font-size:"> Home</a></li>
+                        <li><i class="fa fa-info-circle text-white" aria-hidden="true"></i><a href="index.html#about" style="color:white; font-size:"> About</a></li>
+                        <li><i class="fa fa-briefcase text-white" aria-hidden="true"></i><a href="index.html#how" style="color:white; font-size:"> How we work</a></li>
+                        <li><i class="fa fa-lock text-white" aria-hidden="true"></i><a href="privacy_policy.html" style="color:white; font-size:"> Privacy Policy</a></li>
+                        <li><i class="fa fa-file text-white" aria-hidden="true"></i><a href="termsofuse.html" style="color:white; font-size:"> Terms of Use</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="col-sm-4 col-md-6 sm-height-auto">
+                  <div class="widget dark text-right sm-text-center pt-120 pb-140 pt-xs-40 pb-xs-0 maxwidth400">
+                     <h5 class="widget-title">Quick Contact</h5>
+                     </h5>
+                     <ul>
+                        <li>
+                           <i class="fa fa-phone-square text-white" aria-hidden="true"></i>
+                           <a href="tel: +97714888888" style="color:white; font-size:">  +97714888888</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-phone text-white" aria-hidden="true"></i>
+                           <a href="tel:+977980000000" style="color:white; font-size:"> +977980000000</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-envelope text-white" aria-hidden="true"></i>
+                           <a href="mailto:help@phishing.org" style="color:white; font-size:"> help@phishing.org</a>
+                        </li>
+                     </ul>
+                     <ul class="social-icons icon-gray icon-circled icon-sm pull-right sm-pull-none sm-text-center mt-sm-15">
+                        <li class="wow fadeInRight" data-wow-delay=".1s">
+                           <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-delay=".2s">
+                           <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-nav bg-black-222 p-20">
+            <div class="container pt-20 pb-0">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p class="font-11 pull-left mb-sm-15 sm-text-center sm-pull-none">
+                        Copyright &copy;2020 Phishing Detection Website. All Rights Reserved
+                     </p>
+                     <div class="widget m-0">
+                        <ul class="font-11 pull-right text-right list-inline sm-text-center sm-pull-none">
+                           <li>
+                              <a href="index.html">Home</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#about">About</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#how">How we work?</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      </div>
+      <a class="scrollToTop" href="#" style="display: block;"><i class="fa fa-angle-up"></i></a>
+   </body>

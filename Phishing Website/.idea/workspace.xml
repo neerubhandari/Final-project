@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a58390e8-c834-418f-b5ac-6e9745d0ef70" name="Default Changelist" comment="" />
+    <list default="true" id="a58390e8-c834-418f-b5ac-6e9745d0ef70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phish/home/RF.py" beforeDir="false" afterPath="$PROJECT_DIR$/phish/home/RF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phish/home/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/phish/home/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phish/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/phish/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phish/phish/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/phish/phish/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1giLp7ayvFFQsz3Q7LZqPMCJXPc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,7 +36,8 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PW" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -73,10 +85,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="98" key="FileChooserDialogImpl" timestamp="1614307907697">
+    <state x="460" y="98" key="FileChooserDialogImpl" timestamp="1614592819237">
       <screen x="0" y="0" width="1360" height="687" />
     </state>
-    <state x="460" y="98" key="FileChooserDialogImpl/0.0.1360.687@0.0.1360.687" timestamp="1614307907697" />
+    <state x="460" y="98" key="FileChooserDialogImpl/0.0.1360.687@0.0.1360.687" timestamp="1614592819237" />
     <state width="1339" height="158" key="GridCell.Tab.0.bottom" timestamp="1613973110827">
       <screen x="0" y="0" width="1360" height="687" />
     </state>
@@ -93,13 +105,17 @@
       <screen x="0" y="0" width="1360" height="687" />
     </state>
     <state width="1339" height="158" key="GridCell.Tab.0.right/0.0.1360.687@0.0.1360.687" timestamp="1613973110827" />
-    <state x="181" y="0" key="SettingsEditor" timestamp="1613973890163">
+    <state x="260" y="78" key="IDE.errors.dialog" timestamp="1614440753258">
       <screen x="0" y="0" width="1360" height="687" />
     </state>
-    <state x="181" y="0" key="SettingsEditor/0.0.1360.687@0.0.1360.687" timestamp="1613973890163" />
-    <state x="376" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1614307849802">
+    <state x="260" y="78" key="IDE.errors.dialog/0.0.1360.687@0.0.1360.687" timestamp="1614440753258" />
+    <state x="181" y="0" key="SettingsEditor" timestamp="1614435391071">
       <screen x="0" y="0" width="1360" height="687" />
     </state>
-    <state x="376" y="167" key="com.intellij.ide.util.TipDialog/0.0.1360.687@0.0.1360.687" timestamp="1614307849802" />
+    <state x="181" y="0" key="SettingsEditor/0.0.1360.687@0.0.1360.687" timestamp="1614435391071" />
+    <state x="376" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1614438229445">
+      <screen x="0" y="0" width="1360" height="687" />
+    </state>
+    <state x="376" y="167" key="com.intellij.ide.util.TipDialog/0.0.1360.687@0.0.1360.687" timestamp="1614438229445" />
   </component>
 </project>

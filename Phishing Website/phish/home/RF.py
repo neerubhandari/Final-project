@@ -13,9 +13,7 @@ dataset = pd.read_csv("C:\modified.csv")
 dataset = dataset.drop('id', 1)
 
 x = dataset.iloc[ : , :-1].values
-x=x.shape
 y = dataset.iloc[:, -1:].values
-y=y.shape
 
 #spliting the dataset into training set and test set
 from sklearn.model_selection import train_test_split
