@@ -1,0 +1,47 @@
+.box {
+  height: 3.5rem;
+  width: 5rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+
+  cursor: pointer;
+}
+.smartwatch__color {
+  display: flex;
+  text-align: center;
+  margin-left: 32vw;
+}
+h4 {
+  margin-top: 4rem;
+
+  text-align: center;
+}
+.red {
+  background-color: #ca3d22;
+}
+.blue {
+  background-color: #565681;
+}
+.black {
+  background-color: #23211f;
+}
+.pink {
+  background-color: #e9c7be;
+}
+.purple {
+  background-color: #8a5362;
+}
+.smartwatch__demo img {
+  margin-left: 35vw;
+  height: 60vh;
+  width: 25vw;
+}
+.smartwatch__demo {
+  position: relative;
+}
+.time {
+  position: absolute;
+  top: 47%;
+  left: 45.7%;
+  color: white;
+}
