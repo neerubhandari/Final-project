@@ -1,0 +1,376 @@
+
+{% load static %}
+
+   <head>
+      <title>
+         Phishing Website
+      </title>
+      <!-- Stylesheet -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+ <link href="/static/slider_image.css" rel="stylesheet" type="text/css">
+       <script src="/static/main.js"></script>
+      <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+      <link href="css/animate.css" rel="stylesheet" type="text/css">
+      <link href="/static/css/css-plugin-collections.css" rel="stylesheet"/>
+      <!-- CSS | menuzord megamenu skins -->
+      <link id="menuzord-menu-skins" href="/static/css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
+      <!-- CSS | Main style file -->
+      <link href="/static/css/style-main.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Preloader Styles -->
+      <link href="css/preloader.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Custom Margin Padding Collection -->
+      <link href="/static/css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Responsive media queries -->
+      <link href="/static/css/responsive.css" rel="stylesheet" type="text/css">
+      <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+      <!-- This style css use slider logo-->
+      <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+      <!-- Revolution Slider 5.x CSS settings -->
+      <link href="/static/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/>
+      <link href="/static/js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css"/>
+      <link href="/static/js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css"/>
+      <!-- CSS | Theme Color -->
+      <link href="/static/theme-skin-blue.css" rel="stylesheet" type="text/css">
+      <!-- external javascripts -->
+      <script src="/static/js/jquery-2.2.0.min.js"></script>
+      <script src="/static/js/jquery-ui.min.js"></script>
+      <script src="/static/js/bootstrap.min.js"></script>
+      <!-- This script help to footer slider-->
+      <!-- JS | jquery plugin collection for this theme -->
+      <script src="/static/js/jquery-plugin-collection.js"></script>
+      <!-- Revolution Slider 5.x SCRIPTS -->
+      <script src="/static/js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+      <script src="/static/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+   </head>
+   <body class="has-side-panel side-panel-right fullwidth-page side-push-panel">
+      <div class="body-overlay">
+      </div>
+      <div id="wrapper" class="clearfix">
+         <!-- Header -->
+         <header id="header" class="header">
+             <nav class="navbar navbar-expand-lg row" style="background-color: #7FDBFF;">
+  <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="menuzord-menu pull-right menuzord-right menuzord-indented scrollable  col" >
+                           <li class="active">
+                              <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+                           </li>
+                           <li>
+                              <a href="index.html#about">ABOUT</a>
+                           </li>
+                           <li>
+                              <a href="index.html#how">HOW WE WORK</a>
+                           </li>
+      </ul>
+      </ul>
+    </div>
+       <div class=" no-border m-0 col-6">
+           <h4>Phishing Website Detection</h4>
+       </div>
+
+
+      <ul class="menuzord-menu pull-right menuzord-right menuzord-indented scrollable " >
+
+                          <li class="col" >
+                           <a href="{% url 'home:detect' %}"><button class="btn btn-dark" type="button">Detect URl</button></a>
+                          </li>
+                        </ul>
+  </div>
+</nav>
+
+         </header>
+         <!-- Start main-content -->
+         <div class="main-content">
+            <!-- Section: home -->
+
+            <section data-bg-img="{% static 'images/UCL.png' %}" style="background-image: url(&quot;images/pattern/p4.png&quot;);">
+               <div class="container pb-80">
+                  <div class="section-title text-center">
+                     <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                           <h2 class="text-uppercase mt-0" id="how" >How We Work?</h2>
+                        </div>
+
+                     </div>
+                  </div>
+                   <div class="section-centent">
+                     <div class="row">
+                       <div class="col-md-12">
+                         <div class="services-tab border-10px bg-white-light">
+                           <ul class="nav nav-tabs">
+                             <li class="active"><a href="#tab11" data-toggle="tab"><i class="icon-xray2"></i>Step 1</a></li>
+                             <li><a href="#tab12" data-toggle="tab"><i class="icon-heart36"></i>Step 2</a></li>
+                             <li><a href="#tab13" data-toggle="tab"><i class="icon-brain9"></i>Step 3</a></li>
+                             <li><a href="#tab14" data-toggle="tab"><i class="icon-teeth1"></i>Step 4</a></li>
+                           </ul>
+                           <div class="tab-content">
+                             <div class="tab-pane fade in active" id="tab11">
+                                <div class="row">
+                                 <div class="col-md-5">
+                                   <div class="thumb">
+                                     <img class="img-fullwidth" src="{% static 'images/UCL.png' %}" style="height:300px;" alt="">
+                                   </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                   <div class="service-content">
+                                     <h3 class="sub-title mb-0 mt-30">Step 1</h3>
+                                     <h2 class="title mt-0">Dataset Selection</h2>
+
+                   <p>
+                   This dataset presents two dataset variations that consist of 58,645 and 88,647 websites labeled as legitimate or phishing and allow the researchers to train their
+                       classification models, build phishing detection systems, and mining association rules.</p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10">Legitimate</li>
+
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10">Phishing</li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+
+                     </div>
+                     <div class="tab-pane fade" id="tab12">
+                     <div class="row">
+                     <div class="col-md-5">
+                     <div class="thumb">
+                     <img class="img-fullwidth" src="{% static 'img/filtering.jpeg' %}" alt="">
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <div class="service-content">
+                     <h3 class="sub-title mb-0 mt-30">Step 2</h3>
+                     <h2 class="title mt-0">Filtering the dataset</h2>
+                     <p>Data cleaning is a critically important step in any machine learning project.
+In tabular data, there are many different statistical analysis and data visualization techniques
+                         you can use to explore your data in order to identify
+                         data cleaning operations you may want to perform.</p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10">Visualize dataset</li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10">Remove duplicate values</li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="tab-pane fade" id="tab13">
+                     <div class="row">
+                     <div class="col-md-5">
+                     <div class="thumb">
+                     <img class="img-fullwidth" src="{% static 'img/training.png' %}" style="height:400px;" alt="">
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <div class="service-content">
+                     <h3 class="sub-title mb-0 mt-30">Step 3</h3>
+                     <h1 class="title mt-0">Training and Testing with RandomForest</h1>
+                     <p>Splitting the dataset into training and testing in the ratio 8:2
+                         .As training the dataset is most important so most of the data are used for training.</p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10">Training:80%</li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10">Testing:20% </li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="tab-pane fade" id="tab14">
+                     <div class="row">
+                     <div class="col-md-5">
+                     <div class="thumb">
+                     <img class="img-fullwidth" src="{% static 'img/model.png' %}" alt="">
+                     </div>
+                     </div>
+                     <div class="col-md-6">
+                     <div class="service-content">
+                     <h3 class="sub-title mb-0 mt-30">Step 4</h3>
+                     <h1 class="title mt-0">Implementing the model for prediction</h1>
+                     <p></p>
+                     <div class="row mt-30 mb-20">
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> </li>
+                       </ul>
+                      </div>
+                      <div class="col-xs-6">
+                       <ul class="mt-10">
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> Feel like Home Services</li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> Outdoor Checkup</li>
+                         <li class="mb-10"><i class="fa fa-angle-double-right text-theme-colored font-15"></i> Easy and Affordable Billing</li>
+                       </ul>
+                      </div>
+                     </div>
+                     <a class="btn btn-lg btn-dark btn-theme-colored" href="#">View Details</a>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+
+                     </div>
+                     </div>
+                     </div>
+                     </div> -->
+               </div>
+             </div>
+            </section>
+      </div>
+      <!-- end main-content -->
+      <!-- Footer -->
+      <footer class="footer p-0 bg-solid-color bg-black-111">
+         <div class="container">
+            <div class="row">
+               <div class="footer-box-wrapper equal-height">
+                  <div class="col-sm-4 footer-box-one pr-0 pl-sm-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                                Extension Available
+                           </h4>
+                           <p>
+                                 If you want to detect phishing URL then you can use the extesnion of this web-app
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 footer-box-two pl-0 pr-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                              Secure Search
+                           </h4>
+                           <p>
+                              If your visiting any suspicious site ,please do check if the site is safe oe not with this website.
+
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4 footer-box-three pl-0 pr-sm-0">
+                     <div class="footer-box icon-box media">
+                        <a href="#" class="media-left pull-left mr-30 mr-sm-15"></a>
+                        <div class="media-body">
+                           <h4 class="media-heading heading title">
+                              View Information
+                           </h4>
+                           <p>
+                              You can also get some important information about phishing with the help of our website.
+
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row equal-height">
+               <div class="col-sm-4 col-md-6 border-right-black sm-height-auto">
+                  <div class="widget dark pt-120 pb-30 maxwidth400 sm-text-center">
+                     <h5 class="widget-title">
+                        Quick Links
+                     </h5>
+                     <ul>
+                        <li><i class="fa fa-home text-white" aria-hidden="true"></i><a href="index.html" style="color:white; font-size:"> Home</a></li>
+                        <li><i class="fa fa-info-circle text-white" aria-hidden="true"></i><a href="index.html#about" style="color:white; font-size:"> About</a></li>
+                        <li><i class="fa fa-briefcase text-white" aria-hidden="true"></i><a href="index.html#how" style="color:white; font-size:"> How we work</a></li>
+                        <li><i class="fa fa-lock text-white" aria-hidden="true"></i><a href="privacy_policy.html" style="color:white; font-size:"> Privacy Policy</a></li>
+                        <li><i class="fa fa-file text-white" aria-hidden="true"></i><a href="termsofuse.html" style="color:white; font-size:"> Terms of Use</a></li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="col-sm-4 col-md-6 sm-height-auto">
+                  <div class="widget dark text-right sm-text-center pt-120 pb-140 pt-xs-40 pb-xs-0 maxwidth400">
+                     <h5 class="widget-title">Quick Contact</h5>
+                     </h5>
+                     <ul>
+                        <li>
+                           <i class="fa fa-phone-square text-white" aria-hidden="true"></i>
+                           <a href="tel: +97714888888" style="color:white; font-size:">  +97714888888</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-phone text-white" aria-hidden="true"></i>
+                           <a href="tel:+977980000000" style="color:white; font-size:"> +977980000000</a>
+                        </li>
+                        <li>
+                           <i class="fa fa-envelope text-white" aria-hidden="true"></i>
+                           <a href="mailto:help@phishing.org" style="color:white; font-size:"> help@phishing.org</a>
+                        </li>
+                     </ul>
+                     <ul class="social-icons icon-gray icon-circled icon-sm pull-right sm-pull-none sm-text-center mt-sm-15">
+                        <li class="wow fadeInRight" data-wow-delay=".1s">
+                           <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="wow fadeInRight" data-wow-delay=".2s">
+                           <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-nav bg-black-222 p-20">
+            <div class="container pt-20 pb-0">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p class="font-11 pull-left mb-sm-15 sm-text-center sm-pull-none">
+                        Copyright &copy;2020 Phishing Detection Website. All Rights Reserved
+                     </p>
+                     <div class="widget m-0">
+                        <ul class="font-11 pull-right text-right list-inline sm-text-center sm-pull-none">
+                           <li>
+                              <a href="index.html">Home</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#about">About</a>
+                           </li>
+                           <li>
+                              /
+                           </li>
+                           <li>
+                              <a href="index.html#how">How we work?</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      </div>
+      <a class="scrollToTop" href="#" style="display: block;"><i class="fa fa-angle-up"></i></a>
+   </body>
